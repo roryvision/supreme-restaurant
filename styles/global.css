@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Nyght Serif';
+  src: url('../assets/fonts/NyghtSerif-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nyght Serif';
+  src: url('../assets/fonts/NyghtSerif-LightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../assets/fonts/Nohemi-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../assets/fonts/Nohemi-Medium.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nohemi', Helvetica, Arial, sans-serif;
+  color: #660708;
+  background-color: #FFFFFE;
+}
+
+h1 {
+  font-family: 'Nyght Serif';
+  font-weight: normal;
+}
