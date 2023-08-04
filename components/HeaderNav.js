@@ -5,6 +5,7 @@ headerTemplate.innerHTML = `
     header {
       margin: 48px 88px 0px 88px;
     }
+    
     ul {
       list-style: none;
       padding: 0;
