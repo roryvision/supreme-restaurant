@@ -63,9 +63,19 @@ h3 {
   font-size: 32px;
 }
 
+a {
+  color: #660708;
+}
+
 .flex-btwn {
   display: flex;
   justify-content: space-between;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .my-88 {
@@ -74,4 +84,8 @@ h3 {
 
 .text-right {
   text-align: right;
+}
+
+.w-full {
+  width: fit-content;
 }
