@@ -28,7 +28,6 @@
 
 body {
   font-family: 'Nohemi', Helvetica, Arial, sans-serif;
-  font-size: 28px;
   color: #660708;
   background-color: #FFFFFE;
   margin: 0px;
@@ -48,19 +47,19 @@ h1, h2, h3, p {
 h1 {
   font-family: 'Nyght Serif';
   font-weight: normal;
-  font-size: 96px;
+  font-size: 5em;
 }
 
 h2 {
   font-family: 'Nyght Serif';
   font-weight: normal;
-  font-size: 48px;
+  font-size: 3em;
 }
 
 h3 {
   font-family: 'Nohemi';
   font-weight: normal;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 a {
@@ -82,10 +81,43 @@ a {
   margin: 88px 0px;
 }
 
+.text-md {
+  font-size: 1.8em;
+}
+
 .text-right {
   text-align: right;
 }
 
 .w-full {
   width: fit-content;
+}
+
+.hide-small {
+  visibility: visible;
+}
+
+@media only screen and (min-device-width: 933px) and (max-width: 1280px) {
+  .my-88 {
+    margin: 44px 0px;
+  }
+
+  .text-md {
+    font-size: 1.2em;
+  }
+
+  .hide-small {
+    visibility: hidden;
+    width: 0;
+  }
+}
+
+@media only screen and (max-device-width: 932px) {
+  #dishes {
+    flex-direction: column;
+  }
+
+  .dish-container {
+    width: 100%;
+  }
 }

@@ -29,7 +29,7 @@ headerTemplate.innerHTML = `
     }
 
     #nav-text {
-      font-size: 20px;
+      font-size: 1.2em;
     }
 
     .img-small {

@@ -17,6 +17,12 @@
   margin-top: 70px;
 }
 
+#dishes {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .dish-container {
   width: 30%;
 }
@@ -27,4 +33,51 @@
 
 .dish-text {
   margin: 24px 0px;
+}
+
+@media only screen and (min-device-width: 933px) and (max-width: 1280px) {
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  #title {
+    width: 400px;
+  }
+
+  #img-chef {
+    margin-top: 48px;
+  }
+
+  .dish-text {
+    font-size: 1em;
+    margin: 18px 0px;
+  }
+}
+
+@media only screen and (min-device-width: 933px) and (max-width: 900px) {
+  #dishes {
+    flex-direction: column;
+  }
+
+  .dish-container {
+    width: 100%;
+  }
+
+  .dish-text {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-device-width: 932px) {
+  #dishes {
+    flex-direction: column;
+  }
+
+  .dish-container {
+    width: 100%;
+  }
 }

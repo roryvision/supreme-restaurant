@@ -19,15 +19,19 @@ footerTemplate.innerHTML = `
       font-family: 'Nyght Serif';
       font-weight: normal;
       font-style: italic;
-      font-size: 48px;
+      font-size: 3em;
     }
 
     h2 {
       font-family: 'Nohemi';
       font-weight: bold;
-      font-size: 32px;
+      font-size: 1.5em;
       margin-top: 44px;
       margin-bottom: 12px;
+    }
+
+    span {
+      font-size: 1.5em;
     }
 
     button {
@@ -53,6 +57,7 @@ footerTemplate.innerHTML = `
 
     #top {
       align-self: flex-end;
+      font-size: 1.5em;
     }
   </style>
   
