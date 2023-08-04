@@ -2,6 +2,9 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
   <style>
+    header {
+      margin: 48px 88px 0px 88px;
+    }
     ul {
       list-style: none;
       padding: 0;
@@ -21,31 +24,38 @@ headerTemplate.innerHTML = `
     }
 
     nav {
-      display: flex;
-      justify-content: space-between;
-      width: 300px;
+      width: clamp(200px, 50%, 300px);
     }
 
-    .nav-text {
+    #nav-text {
       font-size: 20px;
     }
 
-    img {
-      width: 20px;
+    .img-small {
+      height: 20px;
+    }
+
+    .flex-btwn {
+      display: flex;
+      justify-content:space-between;
+    }
+
+    .w-50 {
+      width: 50px;
     }
   </style>
   
   <header>
-    <ul class='nav-text'>
-      <li><a href='info.html'><img src='./assets/images/logo.svg' /></a></li>
-      <nav>
+    <ul id='nav-text'>
+      <li><a href='index.html'><img src='./assets/icons/logo.svg' class='img-small' /></a></li>
+      <nav class='flex-btwn'>
         <li><a href='info.html'>Info</a></li>
-        <li><a href='info.html'>Menu</a></li>
-        <li><a href='info.html'>Contact</a></li>
+        <li><a href='menu.html'>Menu</a></li>
+        <li><a href='contact.html'>Contact</a></li>
       </nav>
-      <div>
-        <li><a href='info.html'><img src='./assets/images/instagram.svg' /></a></li>
-        <li><a href='info.html'><img src='./assets/images/yelp.svg' /></a></li>
+      <div class='flex-btwn w-50'>
+        <li><a href='https://www.instagram.com/supremerestaurant_nyc/' rel='noopener noreferrer' target='_blank'><img src='./assets/icons/instagram.svg' class='img-small' /></a></li>
+        <li><a href='https://www.yelp.com/biz/supreme-restaurant-new-york-2' rel='noopener noreferrer' target='_blank'><img src='./assets/icons/yelp.svg' class='img-small' /></a></li>
       </div>
     </ul>
   </header>
