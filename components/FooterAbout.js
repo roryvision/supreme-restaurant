@@ -85,8 +85,15 @@ footerTemplate.innerHTML = `
 class FooterAbout extends HTMLElement {
   constructor() {
     super();
-    const shadow = this.attachShadow({ mode: 'closed' });
+    const shadow = this.attachShadow({ mode: 'open' });
     shadow.appendChild(footerTemplate.content);
+  }
+
+  connectedCallback() {
+    const topButton = this.shadowRoot.getElementById('top');
+    topButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    })
   }
 }
 

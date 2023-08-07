@@ -48,7 +48,7 @@ headerTemplate.innerHTML = `
   
   <header>
     <ul id='nav-text'>
-      <li><a href='index.html'><img src='./assets/icons/logo.svg' class='img-small' /></a></li>
+      <li class='w-50'><a href='index.html'><img src='./assets/icons/logo.svg' class='img-small' /></a></li>
       <nav class='flex-btwn'>
         <li><a href='info.html'>Info</a></li>
         <li><a href='menu.html'>Menu</a></li>

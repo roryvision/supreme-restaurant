@@ -47,7 +47,7 @@ h1, h2, h3, p {
 h1 {
   font-family: 'Nyght Serif';
   font-weight: normal;
-  font-size: 5em;
+  font-size: 6em;
 }
 
 h2 {
@@ -77,6 +77,13 @@ a {
   justify-content: flex-end;
 }
 
+.align-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .my-88 {
   margin: 88px 0px;
 }
@@ -89,8 +96,12 @@ a {
   text-align: right;
 }
 
-.w-full {
+.w-fit {
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .hide-small {
